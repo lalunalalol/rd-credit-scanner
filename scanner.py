@@ -153,7 +153,7 @@ def evaluate_issue(issue):
     content = (
         f"{SYSTEM_PROMPT}\n\n"
         f"Title: {issue['title']}\n\n"
-        f"Description: {issue['description'][:1000]}\n\n"
+        f"Description: {issue['description'][:4000]}\n\n"
         f"Respond with ONLY a JSON object, no markdown."
     )
     try:
